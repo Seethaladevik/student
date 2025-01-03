@@ -42,7 +42,7 @@ const Login = () => {
             <h1>Login</h1>
           </div>
           <div className="icon">
-            {/* <AccountCircleIcon /> */}
+            
           </div>
           <div className="content">
             <form onSubmit={handleLogin}>
