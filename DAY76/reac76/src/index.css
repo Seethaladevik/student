@@ -1,0 +1,82 @@
+
+
+.box{
+  border: 1px solid black;
+  height: 400px;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 125px;
+  margin-bottom: 100px;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 3px 3px;
+
+  
+}
+/* .back{
+  background-color: blueviolet;
+} */
+
+
+.login{
+  border: 1px solid white;
+  text-align: center;
+  /* margin-top: 150px;
+  margin-left: 300px;
+  margin-right: 250px; */
+  background-color: skyblue;
+  border-radius: 1rem;
+  align-items: center;
+  position: relative;
+}
+.content{
+  border: 1px solid white;
+  /* margin-left: 300px;
+  margin-right: 250px; */
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  text-align: justify;
+}
+.icon{
+  align-items: center;
+  justify-items: center;
+  margin-left: 300px;
+  position: absolute;
+
+}
+input{
+  height: 10mm;
+  align-content: center;
+  border-radius: 1rcap;
+}
+button{
+  margin-top: 10px;
+  height: 10mm;
+  width: 75mm;
+  background-color: lightblue;
+  margin-left: 50px;
+  align-self: center;
+  
+
+}
+.succ{
+  text-align: center;
+}
+.display{
+  display: flex;
+}
+.table2{
+  text-align: left;
+  align-items: end;
+}
+.signup{
+  border: 1px solid black;
+  height: 500px;
+  margin-left: 350px;
+  margin-right: 350px;
+  margin-top: 125px;
+  margin-bottom: 100px;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 3px 3px;
+  
+}
