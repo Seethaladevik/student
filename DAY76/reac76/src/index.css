@@ -1,15 +1,22 @@
+.header1{
+    background-image: url('./assets/log5.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 97vh;
+    width: 100%;
+}
 
 
-.box{
+.box1{
   border: 1px solid black;
-  height: 400px;
-  margin-left: 300px;
-  margin-right: 300px;
-  margin-top: 125px;
-  margin-bottom: 100px;
-  border-radius: 1rem;
+  height: 70%;
+  width: 50%;
+  position: absolute;
+  align-items: center;
+  margin-left: 25vw;
+  margin-top: 10vh;
   box-shadow: 2px 2px 3px 3px;
-
+  background-color: rgba(147, 40, 179, 0.2);
   
 }
 /* .back{
@@ -18,65 +25,144 @@
 
 
 .login{
-  border: 1px solid white;
-  text-align: center;
-  /* margin-top: 150px;
-  margin-left: 300px;
-  margin-right: 250px; */
-  background-color: skyblue;
+  border: 1px solid rgba(135, 40, 179, 0.2);
+  height: 10vh;
+  width: 100%;
   border-radius: 1rem;
-  align-items: center;
-  position: relative;
+  text-align: center;
+  background-color: rgba(147, 40, 179, 0.2);
+  
+}
+.mail{
+    
+    height: 5vh;
+    width:20vw;
+    border: 1px solid rgb(236, 99, 248);
+    background-color: transparent;
+    font-size: large;
+    color: aliceblue;
+}
+.pass{
+    
+    margin-top: 20px;
+     height: 5vh;
+    width:20vw;
+    border: 1px solid rgb(213, 99, 248);
+    background-color: transparent;
+    font-size: large;
+    color: aliceblue;
 }
 .content{
-  border: 1px solid white;
-  /* margin-left: 300px;
-  margin-right: 250px; */
-  align-content: center;
-  align-items: center;
-  justify-items: center;
-  text-align: justify;
+ border: 1px solid rgba(140, 40, 179, 0.2);
+  height: 30vh;
+  width: 100%;
+  border-radius: 1rem;
+  text-align: center;
+  /* background-color: rgba(140, 40, 179, 0.2); */
 }
-.icon{
-  align-items: center;
-  justify-items: center;
-  margin-left: 300px;
-  position: absolute;
+
+.button1{
+   height: 7vh;
+   width:13vw;
+   background-color: rgba(231, 63, 209, 0.63);
+   border-radius: 50px;
+   color: white;
+   text-align: center;
+   justify-content: center;
+   align-items: baseline;
+   margin-top: 5vh;
+   margin-left: 20vw;
+  
 
 }
-input{
-  height: 10mm;
-  align-content: center;
-  border-radius: 1rcap;
-}
-button{
-  margin-top: 10px;
-  height: 10mm;
-  width: 75mm;
-  background-color: lightblue;
-  margin-left: 50px;
-  align-self: center;
+.button2{
+   height: 7vh;
+   width:13vw;
+   background-color: rgba(231, 63, 209, 0.63);
+   border-radius: 50px;
+   color: white;
+   text-align: center;
+   justify-content: center;
+   align-items: baseline;
+   margin-top: 5vh;
+   margin-left: 20vw;
   
 
 }
 .succ{
   text-align: center;
 }
-.display{
-  display: flex;
+
+.header2{
+    background-image: url('./assets/sig.avif');
+    background-size: cover;
+    background-position: center;
+    height: 97vh;
+    width: 100%;
 }
-.table2{
-  text-align: left;
-  align-items: end;
+.button11{
+   height: 7vh;
+   width:13vw;
+   background-color: rgba(231, 63, 209, 0.63);
+   border-radius: 50px;
+   color: white;
+   text-align: center;
+   justify-content: center;
+   align-items: baseline;
+   margin-top: 10vh;
+   margin-left: 20vw;
 }
-.signup{
-  border: 1px solid black;
-  height: 500px;
-  margin-left: 350px;
-  margin-right: 350px;
-  margin-top: 125px;
-  margin-bottom: 100px;
+.button21{
+   height: 7vh;
+   width:13vw;
+   background-color: rgba(231, 63, 209, 0.63);
+   border-radius: 50px;
+   color: white;
+   text-align: center;
+   justify-content: center;
+   align-items: baseline;
+   margin-top: 1vh;
+   margin-left: 20vw;
+  
+
+}
+.header3{
+    background-image: url('./assets/for.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 97vh;
+    width: 100%;
+}
+.header4{
+    background-image: url('./assets/view.avif');
+    background-size: cover;
+    background-position: center;
+    height: 97vh;
+    width: 100%;
+}
+.table{
+  border: 1px solid violet;
+  color: white;
+  margin-left: 10vw;
+  margin-top: 5vw;
+}
+.th{
+  height: 10vh;
+  width: 10vw;
+  text-align: center;
+}
+.box{
+  height: 40vh;
+  width: 99vw;
+  border: 1px solid white;
+}
+.login1{
+  border: 1px solid rgba(135, 40, 179, 0.2);
+  height: 10vh;
+  width: 100%;
+  color: azure;
   border-radius: 1rem;
-  box-shadow: 2px 2px 3px 3px;
+  text-align: center;
+  background-color: rgba(147, 40, 179, 0.2);
   
 }

@@ -44,22 +44,26 @@ const Forgotpassword = () => {
   };
 
   return (
-    <div className="box">
+    <div className="header3">
+      <div className="box1">
         <div className="login">
-            <h1>changepassword</h1>
+            <h2>changepassword</h2>
           </div>
       <form onSubmit={handlePasswordReset}>
-        <h5>
-          Username:<input type="text" placeholder="Enter your username" value={username} onChange={(e) => setUsername(e.target.value)}required/>
-        </h5>
-        <h5>New Password:<input type="password" placeholder="Enter your new password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)}required/>
-        </h5>
-        <button type="submit" disabled={loading}>
+        <div className="content">
+        <h3>
+          Username:<input type="text" className="mail" placeholder="Enter your username" value={username} onChange={(e) => setUsername(e.target.value)}required/>
+        </h3>
+        <h3>New Password:<input type="password" className="pass" placeholder="Enter your new password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)}required/>
+        </h3>
+        </div>
+        <button className="button1"type="submit" disabled={loading}>
           {loading ? "Submitting..." : "Submit"}
         </button>
         <h3></h3>
       </form>
       {error && <p style={{ color: "red" }}>{error}</p>}
+    </div>
     </div>
   );
 };

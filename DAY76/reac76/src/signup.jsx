@@ -47,28 +47,30 @@ const Signup = () => {
 
   return (
     <>
-      <div className="signup">
+      <div className="header2">
+        <div className='box1'>
         <div className="login">
           <h1>SIGNUP</h1>
         </div>
         <form onSubmit={handleSubmit}>
           <div className="content">
-            <h4>Name<input type="text" placeholder="Name" value={username} onChange={(e) => setUsername(e.target.value)} required/>
+            <h4>Name<input type="text" className='mail' placeholder="Name" value={username} onChange={(e) => setUsername(e.target.value)} required/>
             </h4>
 
-            <h4>Password<input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}required/></h4>
+            <h4>Password<input type="password" className='pass' placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}required/></h4>
 
-            <h4>Confirm Password <input type="password" placeholder="Confirm Password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)}required/></h4>
-
-        <button type="submit">Signup</button>
-          </div>
+            <h4>Confirm Password <input type="password" className='pass' placeholder="Confirm Password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)}required/></h4>
+</div>
+        <button type="submit" className='button11'>Signup</button>
+          
         </form>
         <br />
         {message && <p style={{ color: message.includes('Error') ? 'red' : 'green' }}>{message}</p>}
         {/* <button onClick={goToHome}>Home</button> */}
         <div>
-        <button onClick={goToLogin}>Login</button>
+        <button className="button21"onClick={goToLogin}>Login</button>
         </div>
+      </div>
       </div>
     </>
   );

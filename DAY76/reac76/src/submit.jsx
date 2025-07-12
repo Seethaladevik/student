@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const Submit = () => {
@@ -9,6 +10,7 @@ const Submit = () => {
   const [selectedDepartment, setSelectedDepartment] = useState("");
   const [selectedSemester, setSelectedSemester] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
+   const navigate=useNavigate()
 
 
   const fetchUsersBySearch = async (query) => {
@@ -92,22 +94,28 @@ const Submit = () => {
         console.error(err);
       });
   };
-  
+  function goToRegister() {
+    navigate('/register');
+  }
 
   return (
-    <div>
+    <div className='header4'>
+      <div className='box'>
+      <div className='login1'>
       <h1>Student Details</h1>
       {error && <p style={{ color: 'red' }}>{error}</p>}
-      <input
+      </div>
+      <h2 style={{color:"white"}}>search<input
         type="text"
+        className='mail'
         placeholder="Search by any field"
         value={searchQuery}
         onChange={handleSearchChange}
-      />
-      <div style={{ marginBottom: "20px" }}>
+      /></h2>
+      <div style={{ marginBottom: "20px", color:"white"}}>
         <label>
           Filter by Department:
-          <select value={selectedDepartment} onChange={(e) => handleFilterByDepartment(e.target.value)}>
+          <select value={selectedDepartment} className='mail' onChange={(e) => handleFilterByDepartment(e.target.value)}>
             <option value="">All</option>
             <option value="CSE">CSE</option>
             <option value="ECE">ECE</option>
@@ -115,31 +123,36 @@ const Submit = () => {
             <option value="MECH">MECH</option>
           </select>
         </label>
+        
 
         <label style={{ marginLeft: "20px" }}>
           Filter by Semester:
-          <select value={selectedSemester} onChange={(e) => handleFilterBySemester(e.target.value)}>
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((sem) => (
+          <select value={selectedSemester} className='mail' onChange={(e) => handleFilterBySemester(e.target.value)}>
+            {[0,1, 2, 3, 4, 5, 6, 7, 8].map((sem) => (
               <option key={sem} value={sem}>
                 {sem}
               </option>
             ))}
           </select>
         </label>
-      </div>
-
-      <button onClick={handleSortByCgpa} style={{ marginBottom: "20px" }}>
+      
+       &nbsp;&nbsp;&nbsp;
+      <button onClick={handleSortByCgpa}  className='mail' style={{ marginBottom: "20px", fontSize:"10px" }}>
         Sort by CGPA ({sortOrder === "asc" ? "Ascending" : "Descending"})
       </button>
-
-      <table border="1">
+      <button onClick={goToRegister}  className='mail' style={{ marginBottom: "20px", fontSize:"30px" }}>
+        Add
+      </button>
+      </div>
+      </div>
+      <table border="1" className="table">
         <thead>
-          <tr>
-            <th>SID</th>
-            <th>SNAME</th>
-            <th>DEPARTMENT</th>
-            <th>SEM</th>
-            <th onClick={handleSortByCgpa} style={{ cursor: 'pointer' }}>
+          <tr >
+            <th className='th'>SID</th>
+            <th className='th'>SNAME</th>
+            <th className='th'>DEPARTMENT</th>
+            <th className='th'>SEM</th>
+            <th onClick={handleSortByCgpa} style={{ cursor: 'pointer' }} className='th'>
               CGPA {sortOrder === "asc" ? "↑" : "↓"}
             </th>
           </tr>
@@ -148,11 +161,11 @@ const Submit = () => {
           {filteredUsers.length > 0 ? (
             filteredUsers.map((user, index) => (
               <tr key={index}>
-                <td>{user.sid}</td>
-                <td>{user.sname}</td>
-                <td>{user.department}</td>
-                <td>{user.sem}</td>
-                <td>{user.cgpa}</td>
+                <td className='th'>{user.sid}</td>
+                <td className='th'>{user.sname}</td>
+                <td className='th'>{user.department}</td>
+                <td className='th'>{user.sem}</td>
+                <td className='th'>{user.cgpa}</td>
               </tr>
             ))
           ) : (

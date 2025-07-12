@@ -5,6 +5,7 @@ import Login from './login'
 import Home from './home'
 import Signup from './signup'
 import Forgotpassword from './forgotpassword'
+import Register from './register'
 
 const Router = () => {
   return (
@@ -16,6 +17,7 @@ const Router = () => {
             <Route path="/forgot" element={<Forgotpassword/>}/>
             <Route path="/login" element={<Login/>}/>
             <Route path="/signup" element={<Signup/>}/>
+             <Route path="/register" element={<Register/>}/>
         </Routes>
       
     </div>

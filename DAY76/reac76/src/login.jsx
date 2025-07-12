@@ -7,8 +7,8 @@ const Login = () => {
   const [password, setPassword] = useState(""); // State for password
   const [error, setError] = useState(""); // State for error message
   const [loading, setLoading] = useState(false); // State to handle loading status
-
-  const navigate = useNavigate();
+  const navigate=useNavigate()
+ 
 
   const handleLogin = async (e) => {
     e.preventDefault(); 
@@ -36,37 +36,41 @@ const Login = () => {
 
   return (
     <>
-      <div className="back">
-        <div className="box">
+    <div className="header1">
+      <div className="box1">
           <div className="login">
             <h1>Login</h1>
           </div>
           <div className="icon">
             
           </div>
-          <div className="content">
+          
             <form onSubmit={handleLogin}>
+              <div className="content">
               <h4>
                 Username
-                <input type="text" placeholder="username" value={username} onChange={(e) => setUsername(e.target.value)}/>
+                
+                <input type="text" className="mail" placeholder="username" value={username} onChange={(e) => setUsername(e.target.value)}/>
               </h4>
               <h4>
                 Password
-                <input type="password" placeholder="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+                <input type="password" className="pass" placeholder="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
               </h4>
               <p onClick={()=>navigate("/forgot")}>forgotpassword</p>
-              <button type="submit" disabled={loading}>{loading ? "Loading..." : "Submit"}
+              </div>
+              <button type="submit" className="button1" disabled={loading}>{loading ? "Loading..." : "Submit"}
               </button>
               <br />
-              <button type="button" onClick={() => navigate("/signup")}>
+              <button type="button" className="button2"onClick={() => navigate("/signup")}>
                 Sign Up
               </button>
               <br />
             </form>
             {error && <p style={{ color: "red" }}>{error}</p>}
           </div>
-        </div>
-      </div>
+          </div>
+        
+      
     </>
   );
 };
