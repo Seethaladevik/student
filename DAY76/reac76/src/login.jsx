@@ -15,7 +15,7 @@ const Login = () => {
     setLoading(true); 
 
     try {
-      const response = await axios.post("http://127.0.0.1:8000/data", { username, password });
+      const response = await axios.post("https://studentdatabase-6.onrender.com/data", { username, password });
 
       if (response.data.status === "Success") {
         // Successful login

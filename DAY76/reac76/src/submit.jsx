@@ -15,7 +15,7 @@ const Submit = () => {
 
   const fetchUsersBySearch = async (query) => {
     try {
-      const response = await axios.post("http://127.0.0.1:8000/search", {
+      const response = await axios.post("https://studentdatabase-6.onrender.com/search", {
         search: query,
       });
       setFilteredUsers(response.data);
@@ -38,7 +38,7 @@ const Submit = () => {
   useEffect(() => {
     // Fetch initial user data
     axios
-      .get("http://127.0.0.1:8000/detail")
+      .get("https://studentdatabase-6.onrender.com/detail")
       .then((response) => {
         setUsers(response.data);
         setFilteredUsers(response.data);
@@ -66,7 +66,7 @@ const Submit = () => {
     }
 
     axios
-      .post("http://127.0.0.1:8000/department", { department })
+      .post("https://studentdatabase-6.onrender.com/department", { department })
       .then((response) => {
         setFilteredUsers(response.data || []);
       })
@@ -85,7 +85,7 @@ const Submit = () => {
     }
 
     axios
-      .post("http://127.0.0.1:8000/sem", { sem: semester })
+      .post("https://studentdatabase-6.onrender.com/sem", { sem: semester })
       .then((response) => {
         setFilteredUsers(response.data || []);
       })
@@ -163,7 +163,7 @@ const Submit = () => {
             filteredUsers.map((user, index) => (
               <tr key={index}>
                 <td className='th'>{user.sid}</td>
-                <td className='th'>{user.sname}</td>
+                <td className='th'>{user.name}</td>
                 <td className='th'>{user.department}</td>
                 <td className='th'>{user.sem}</td>
                 <td className='th'>{user.cgpa}</td>

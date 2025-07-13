@@ -20,7 +20,7 @@ const Signup = () => {
 
     try {
       // Sending POST request to FastAPI backend
-      const response = await axios.post('http://127.0.0.1:8000/insert', {
+      const response = await axios.post('https://studentdatabase-6.onrender.com/insert', {
         username: username,
         password: password,
       });

@@ -16,7 +16,7 @@ const Forgotpassword = () => {
 
     try {
       // Send username and new password to the backend
-      const response = await axios.post("http://127.0.0.1:8000/forgot_password", {
+      const response = await axios.post("https://studentdatabase-6.onrender.com/forgot_password", {
         username,
         new_password: newPassword,
       });
