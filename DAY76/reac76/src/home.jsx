@@ -1,11 +1,11 @@
 import React from 'react'
-import useUserStore from '../store/useUserStore'
+// import useUserStore from "../src/store/useUserStore";
 import { useNavigate } from 'react-router-dom'
-const setUser = useUserStore((state) => state.setUser);
+// const setUser = useUserStore((state) => state.setUser);
 const Home = () => {
     const Navigate=useNavigate();
     function Log(){
-        setUser("Seetha");
+        // setUser("Seetha");
         Navigate("/login")
     }
     function Sign(){
