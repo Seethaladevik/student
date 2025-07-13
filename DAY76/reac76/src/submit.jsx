@@ -137,17 +137,18 @@ const Submit = () => {
         </label>
       
        &nbsp;&nbsp;&nbsp;
-      <button onClick={handleSortByCgpa}  className='mail' style={{ marginBottom: "20px", fontSize:"10px" }}>
+      <button onClick={handleSortByCgpa}  className='mail' style={{ marginBottom: "20px", fontSize:"10px" ,marginTop:"1vh", marginLeft:"2vw"}}>
         Sort by CGPA ({sortOrder === "asc" ? "Ascending" : "Descending"})
       </button>
-      <button onClick={goToRegister}  className='mail' style={{ marginBottom: "20px", fontSize:"30px" }}>
+      <button onClick={goToRegister}  className='mail' style={{ marginBottom: "20px", fontSize:"10px", marginTop:"1vh", marginLeft:"2vw" }}>
         Add
       </button>
       </div>
       </div>
+      <div className='scrool'>
       <table border="1" className="table">
         <thead>
-          <tr >
+          <tr  >
             <th className='th'>SID</th>
             <th className='th'>SNAME</th>
             <th className='th'>DEPARTMENT</th>
@@ -175,6 +176,7 @@ const Submit = () => {
           )}
         </tbody>
       </table>
+      </div>
     </div>
   );
 };

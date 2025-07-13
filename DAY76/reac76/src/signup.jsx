@@ -59,7 +59,7 @@ const Signup = () => {
 
             <h4>Password<input type="password" className='pass' placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}required/></h4>
 
-            <h4>Confirm Password <input type="password" className='pass' placeholder="Confirm Password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)}required/></h4>
+            <h4>Confirm Password <input type="password" className='pass1' placeholder="Confirm Password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)}required/></h4>
 </div>
         <button type="submit" className='button11'>Signup</button>
           

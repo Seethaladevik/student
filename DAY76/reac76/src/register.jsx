@@ -83,15 +83,15 @@ const Register = () => {
     };
 
     return (
-        <div className="header1">
-            <div className="regist2">
-                <div className="adjust">
+        <div className="header111">
+            <div className="tran">
+                <div className="login">
+            <h1><u>Register</u></h1>
+          </div>
                     <form onSubmit={handleSubmit}>
-                        <div className="var3">
-                            <div className="tran">
-                                <div className="form">
-
-                                    <div className="mail2">
+                        
+                            
+                                <div className="mail2">
                                         <input
                                             type="number"
                                             name="sid"
@@ -100,6 +100,7 @@ const Register = () => {
                                             onChange={handleChange}
                                             value={formData.sid}
                                             required
+                                            style={{backgroundColor:"rgba(253, 247, 255, 0.34)", color:"white"}}
                                         />
                                         {error.sid && <p style={{ color: "red" }}>{error.sid}</p>}
                                     </div>
@@ -113,17 +114,19 @@ const Register = () => {
                                             onChange={handleChange}
                                             value={formData.name}
                                             required
+                                            style={{backgroundColor:"rgba(253, 247, 255, 0.34)", color:"white"}}
                                         />
                                         {error.name && <p style={{ color: "red" }}>{error.name}</p>}
                                     </div>
 
-                                    <div className="mail2">
+                                   <div className="mail2">
                                         <select
                                             name="department"
                                             className="mail"
                                             onChange={handleChange}
                                             value={formData.department}
                                             required
+                                            style={{backgroundColor:"rgba(151, 40, 179, 0.5)", color:"white"}}
                                         >
                                             <option value="Aerospace Engineering">Aerospace Engineering</option>
                                             <option value="Avionics">Avionics</option>
@@ -134,8 +137,8 @@ const Register = () => {
                                             <option value="Physics">Physics</option>
                                         </select>
                                         {error.department && <p style={{ color: "red" }}>{error.department}</p>}
+                                    
                                     </div>
-
                                     <div className="mail2">
                                         <div className="mail23">
                                             <input
@@ -146,11 +149,12 @@ const Register = () => {
                                                 onChange={handleChange}
                                                 value={formData.sem}
                                                 required
+                                                style={{backgroundColor:"rgba(253, 247, 255, 0.34)", color:"white"}}
                                             />
                                             {error.sem && <p style={{ color: "red" }}>{error.sem}</p>}
                                         </div>
 
-                                        <div className="mail23">
+                                        <div className="mail123">
                                             <input
                                                 type="number"
                                                 step="0.1"
@@ -160,22 +164,23 @@ const Register = () => {
                                                 onChange={handleChange}
                                                 value={formData.cgpa}
                                                 required
+                                                style={{backgroundColor:"rgba(253, 247, 255, 0.34)", color:"white"}}
                                             />
                                             {error.cgpa && <p style={{ color: "red" }}>{error.cgpa}</p>}
                                         </div>
 
-                                        <div className="mail24">
-                                            <button type="submit" className="button1">Register</button>
-                                        </div>
+                                        
+                                            <button type="submit" className="button101">Register</button>
+                                        
                                     </div>
 
-                                </div>
-                            </div>
-                        </div>
+                               
+                          
+                        
                     </form>
-                </div>
-            </div>
-        </div>
+                     </div> 
+        </div> 
+       
     );
 };
 

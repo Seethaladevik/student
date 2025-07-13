@@ -10,10 +10,14 @@ const Home = () => {
         Navigate("/signup")
     }
   return (
-    <div className="succ">
-      <h1>WELCOME </h1>
-      <button onClick={Log}>login</button><br></br>
-      <button onClick={Sign}>signup</button>
+    <div className="header50">
+      <div className='box1'>
+      <div className='skylog-title'>
+      <h1>SKYLOG ACADEMY</h1>
+      </div>
+      <button className="button1"onClick={Log}>login</button><br></br>
+      <button className="button1"onClick={Sign}>signup</button>
+      </div>
     </div>
   )
 }

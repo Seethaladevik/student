@@ -52,6 +52,16 @@
     font-size: large;
     color: aliceblue;
 }
+.pass1{
+    
+    margin-top: 20px;
+     height: 5vh;
+    width:20vw;
+    border: 1px solid rgb(213, 99, 248);
+    background-color: transparent;
+    font-size: large;
+    color: aliceblue;
+}
 .content{
  border: 1px solid rgba(140, 40, 179, 0.2);
   height: 30vh;
@@ -143,13 +153,20 @@
 .table{
   border: 1px solid violet;
   color: white;
-  margin-left: 10vw;
-  margin-top: 5vw;
+  margin-left: 20vw;
+  margin-top: 5vh;
+  
 }
 .th{
   height: 10vh;
   width: 10vw;
   text-align: center;
+}
+.th1{
+  height: 10vh;
+  width: 10vw;
+  text-align: center;
+  position: fixed;
 }
 .box{
   height: 40vh;
@@ -165,4 +182,136 @@
   text-align: center;
   background-color: rgba(147, 40, 179, 0.2);
   
+}
+.header111{
+    background-image: url('./assets/reg1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 97vh;
+    width: 100%;
+}
+.tran{
+  border: 1px solid black;
+  height: 70%;
+  width: 50%;
+  position: absolute;
+  align-items: center;
+  margin-left: 25vw;
+  margin-top: 10vh;
+  box-shadow: 2px 2px 3px 3px;
+  background-color: rgba(147, 40, 179, 0.2);
+  
+}
+.mail2{
+  margin-left: 14vw;
+  margin-top: 4vh;
+  color: white;
+  
+ 
+}
+.mail123{
+  
+  margin-top: 10px;
+  margin-right: 50px;
+}
+.button101{
+   height: 7vh;
+   width:10vw;
+   background-color: rgba(231, 63, 209, 0.63);
+   border-radius: 50px;
+   color: white;
+   text-align: center;
+   justify-content: center;
+   align-items: baseline;
+   margin-top: 2vh;
+   margin-left: 5vw;
+  
+
+}
+.scrool{
+  /* border: 1px solid white; */
+  height: 50vh;
+  width: 90vw;
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  
+  
+}
+.header50{
+    background-image: url('./assets/home1.avif');
+    background-size: cover;
+    background-position: center;
+    height: 97vh;
+    width: 100%;
+}
+/* 🌌 Title: SkyLog Academy */
+.skylog-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 2.0rem;
+  text-align: center;
+  background: linear-gradient(90deg, #003cff, #a64aff, #7f00ff); /* rose → purple */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 5s ease-in-out infinite alternate;
+  letter-spacing: 2px;
+  /* margin: 1rem auto; */
+  /* padding: 1rem; */
+  max-width: 90%;
+  word-wrap: break-word;
+}
+
+
+/* 💬 Chat Font Style for general text (like chat UI, forms) */
+body, input, textarea, button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+/* Responsive Adjustments 📱 */
+@media screen and (max-width: 768px) {
+  .skylog-title {
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skylog-title {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .button1 {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .button2 {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .button11 {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .button21 {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pass1 {
+    font-size: 1px;
+    letter-spacing: 1px;
+  }
 }
