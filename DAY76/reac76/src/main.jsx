@@ -7,7 +7,7 @@ import { KnockProvider } from '@knocklabs/react'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
 // Fetch the user token from FastAPI backend
-fetch("http://localhost:8000/knock-token")
+fetch("https://studentdatabase-6.onrender.com/knock-token")
   .then((res) => res.json())
   .then((data) => {
     const token = data.user_token;
