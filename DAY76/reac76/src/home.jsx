@@ -1,9 +1,11 @@
 import React from 'react'
+import useUserStore from '../store/useUserStore'
 import { useNavigate } from 'react-router-dom'
-
+const setUser = useUserStore((state) => state.setUser);
 const Home = () => {
     const Navigate=useNavigate();
     function Log(){
+        setUser("Seetha");
         Navigate("/login")
     }
     function Sign(){
