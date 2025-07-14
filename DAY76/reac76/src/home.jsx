@@ -1,16 +1,24 @@
 import React from 'react';
 import useUserStore from "../src/store/useUserStore";
 import { useNavigate } from 'react-router-dom';
+import { loginUser } from '../src/api'; // ✅ Correct import
 
 const Home = () => {
   const navigate = useNavigate();
-  const setUser = useUserStore((state) => state.setUser); // ✅ moved inside component
+  const setUser = useUserStore((state) => state.setUser);
 
-  function Log() {
-    setUser("Seetha");
+  async function Log() {
+    try {
+      const user = await loginUser("Seetha"); // Replace with real form value later
+      setUser(user);
+      navigate("/login"); // Go to dashboard or wherever after login
+    } catch (err) {
+      console.error("Login failed:", err.message);
+    }
+  }
+ function Log() {
     navigate("/login");
   }
-
   function Sign() {
     navigate("/signup");
   }
