@@ -16,9 +16,7 @@ const Home = () => {
       console.error("Login failed:", err.message);
     }
   }
- function Log() {
-    navigate("/login");
-  }
+
   function Sign() {
     navigate("/signup");
   }
